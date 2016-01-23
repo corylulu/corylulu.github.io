@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+  <meta charset="utf-8" />
+  <title>League Of Legends Live Data Socket Reader</title>
+  <style>
+  #output2 { white-space: pre; font-family: monospace; }
+  body { font-family: Verdana, Arial, Tahoma, serif; }
+  </style>
+  <script language="javascript" type="text/javascript">
+
+  var wsUri = "ws://livestats.proxy.lolesports.com/stats";
+  var output;
+  var output2;
+
+  function init()
+  {
+    output = document.getElementById("output");
+    output2 = document.getElementById("output2");
+    testWebSocket();
+  }
+
+  function testWebSocket()
+  {
+    websocket = new WebSocket(wsUri);
+    websocket.onopen = function(evt) { onOpen(evt) };
+    websocket.onclose = function(evt) { onClose(evt) };
+    websocket.onmessage = function(evt) { onMessage(evt) };
+    websocket.onerror = function(evt) { onError(evt) };
+  }
+
+  function onOpen(evt)
+  {
+    writeToScreen("CONNECTED");
+  }
+
+  function onClose(evt)
+  {
+    writeToScreen("DISCONNECTED");
+  }
+
+  function onMessage(evt)
+  {
+    writeToScreen2(evt.data);
+    //websocket.close();
+  }
+
+  function onError(evt)
+  {
+    writeToScreen('<span style="color: red;">ERROR:</span> ' + evt.data);
+  }
+
+  function doSend(message)
+  {
+    writeToScreen("SENT: " + message);
+    websocket.send(message);
+  }
+
+  function writeToScreen(message)
+  {
+    var pre = document.createElement("p");
+    pre.style.wordWrap = "break-word";
+    pre.innerHTML = message;
+    output.appendChild(pre);
+  }
+  
+  function writeToScreen2(message)
+  {
+    output2.innerHTML = '';
+    output2.appendChild(document.createTextNode(JSON.stringify(JSON.parse(message), null, 4)));
+  }
+
+  window.addEventListener("load", init, false);
+
+  </script>
+
+  <h2>League Of Legends Live Data Socket Reader</h2>
+
+  <div id="output"></div>
+  <div id="output2"></div>
