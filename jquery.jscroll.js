@@ -168,6 +168,10 @@
 	       | | | |             || |  
 	       | | | |             || |  
 	       | | | |             || |  ` + '</pre></div>');
+		    
+	    	if (_$body.height() <= _$window.height()) {
+			_observe();
+	    	}
 
                 return;
             },
