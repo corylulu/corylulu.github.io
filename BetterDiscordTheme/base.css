@@ -220,11 +220,12 @@ code.inline {
 }
 
 /* Adjusts message area, adds subtle divider */
-.da-avatar,
-.avatar-1BDn8e {
+.da-messagesWrapper .da-avatar,
+.da-messagesWrapper .avatar-1BDn8e {
     top: 0.5rem;
     left: calc(16px - 0.875rem);
 }
+
 .da-messagesWrapper .da-groupStart,
 .group-spacing-16 .groupStart-23k01U {
     margin-top: .5rem;
