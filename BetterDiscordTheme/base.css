@@ -204,13 +204,13 @@ body div .layerContainer-yqaFcK .layer-v9HyYc {
 /* END: Context menu adjustments */
 
 /* START: Adjusts message area, adds subtle divider */
-.da-messagesWrapper .da-avatar,
-.da-messagesWrapper .avatar-1BDn8e {
+.group-spacing-16 .da-avatar,
+.group-spacing-16 .avatar-1BDn8e {
     top: 0.5rem;
     left: calc(16px - 0.875rem);
 }
 
-.da-messagesWrapper .da-groupStart,
+.group-spacing-16 .da-groupStart,
 .group-spacing-16 .groupStart-23k01U {
     margin-top: .5rem;
     margin-bottom: -2px;
@@ -221,8 +221,8 @@ body div .layerContainer-yqaFcK .layer-v9HyYc {
     padding-left: calc(72px - 1rem);
     padding-right: calc(72px - .875rem);
 }
-.da-messagesWrapper .group-spacing-16 .hasContent-1_DUdQ,
-.da-messagesWrapper .default-1mVZrv {
+.group-spacing-16 .hasContent-1_DUdQ,
+.group-spacing-16 .default-1mVZrv {
   margin-bottom: -9px;
 }
 /* END: Adjusts message area, adds subtle divider */
