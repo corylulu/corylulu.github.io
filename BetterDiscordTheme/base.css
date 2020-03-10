@@ -203,23 +203,7 @@ body div .layerContainer-yqaFcK .layer-v9HyYc {
 }
 /* END: Context menu adjustments */
 
-/* Makes scrollbars darker to increase visibility */
-*::-webkit-scrollbar-thumb {
-  background-color: rgba(0, 0, 0, .3) !important;
-}
-
-/* Makes Inline code background darker to increase visibility */
-code.inline {
-  background: #0000004a !important;
-}
-
-/* Darkens the secondary background colors globally to improve contrast */
-.theme-dark {
-  --background-secondary: #27292e !important;
-  --background-secondary-alt: #202225 !important;
-}
-
-/* Adjusts message area, adds subtle divider */
+/* START: Adjusts message area, adds subtle divider */
 .da-messagesWrapper .da-avatar,
 .da-messagesWrapper .avatar-1BDn8e {
     top: 0.5rem;
@@ -237,7 +221,24 @@ code.inline {
     padding-left: calc(72px - 1rem);
     padding-right: calc(72px - .875rem);
 }
-.group-spacing-16 .hasContent-1_DUdQ,
-.default-1mVZrv {
-  margin-bottom: -0.55rem;
+.da-messagesWrapper .group-spacing-16 .hasContent-1_DUdQ,
+.da-messagesWrapper .default-1mVZrv {
+  margin-bottom: -9px;
+}
+/* END: Adjusts message area, adds subtle divider */
+
+/* Makes scrollbars darker to increase visibility */
+*::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 0, 0, .3) !important;
+}
+
+/* Makes Inline code background darker to increase visibility */
+code.inline {
+  background: #0000004a !important;
+}
+
+/* Darkens the secondary background colors globally to improve contrast */
+.theme-dark {
+  --background-secondary: #27292e !important;
+  --background-secondary-alt: #202225 !important;
 }
