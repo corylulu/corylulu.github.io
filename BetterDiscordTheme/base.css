@@ -67,21 +67,24 @@ div div div[role='button'] .emoji {
     width: 1.55rem !important;
     height: 1.55rem !important;
 }
-.da-channelTextArea .da-webkit {
+.da-channelTextArea .da-webkit,
+.channelTextArea-rNsIhG .webkit-HjD9Er {
     max-height: calc(100vh - 280px) !important;
 }
 .emoji.jumboable {
     width: 2.2rem !important;
     height: 2.2rem !important;
 }
-.da-emojiPicker .da-firefoxFixScrollFlex {
+.da-emojiPicker .da-scroller,
+.emojiPicker-3m1S-j .scroller-3vODG7 {
     /* Makes emoji picker larger */
     height: 324px !important; 
 }
 /* END: Enlargens emoji's globally */
 
 /* Adds line under servers in server list */
-.da-scroller > .da-listItem.bd-guild > .da-blobContainer:after {
+.da-scroller>.da-listItem.bd-guild>.da-blobContainer:after,
+.scroller-3vODG7>.listItem-2P_4kh.bd-guild>.blobContainer-239gwq:after {
     content: "\00a0 ";
     border-bottom: 2px #2f3136 solid;
     margin: 6px auto 0px auto;
@@ -93,31 +96,40 @@ div div div[role='button'] .emoji {
 }
 
 /* START: Adjusted whitespace in channel list sidebar (compactified, but comfy) */
-.da-content.da-sidebar {
+.da-content.da-sidebar,
+.content-98HsJk .sidebar-2K8pFh {
     width: 228px !important; /* Makes the sidebar slightly narrower */
 }
-.da-sidebar .da-scroller {
+.da-sidebar .da-scroller,
+.sidebar-2K8pFh .scroller-3vODG7 {
     padding-top: 6px; 
 }
-.da-containerDefault {
+.da-containerDefault,
+.containerDefault-3GGEv_ {
     padding-top: 0px !important;
 }
-.da-containerDefault .da-collapsed {
+.da-containerDefault .da-collapsed, 
+.containerDefault-3GGEv_ .collapsed-1GMuSb {
     padding-top: 6px !important;
 }
-.da-containerDefault .da-wrapper .da-content {
+.da-containerDefault .da-wrapper .da-content,
+.containerDefault-3GGEv_ .wrapper-1Rf91z .content-98HsJk {
     height: 28px !important;
 }
-.da-containerDefault .da-wrapper {
+.da-containerDefault .da-wrapper,
+.containerDefault-3GGEv_ .wrapper-1Rf91z {
     height: 32px !important;
 }
-.da-containerDefault .da-wrapper.da-collapsed .da-icon {
+.da-containerDefault .da-wrapper.da-collapsed .da-icon,
+.containerDefault-3GGEv_ .wrapper-1Rf91z.collapsed-1GMuSb .icon-27yU2q {
     top: 13px !important;   
 }
-.da-containerDefault .da-wrapper .da-icon {
+.da-containerDefault .da-wrapper .da-icon,
+.containerDefault-3GGEv_ .wrapper-1Rf91z .icon-27yU2q {
     top: 10px !important;   
 }
-.da-children .da-addButton {
+.da-children .da-addButton,
+.children-13TY0l .addButton-1BORro {
     height: 20px !important;   
 }
 /* END: Adjusted whitespace in channel list sidebar */
@@ -126,28 +138,36 @@ div div div[role='button'] .emoji {
 body {
     font-family: Slack-Lato,appleLogo,sans-serif !important;
 }
-div.da-name {
+div.da-name,
+div.name-3YKhmS {
     font-size: 14.5px;
     line-height: 18px;
 }
-div.da-item {
+div.da-item,
+div.item-2hkk8m {
     font-size: 15px;
     line-height: 18px;
 }
-.da-layout .da-content {
+.da-layout .da-content,
+.layout-2DM8Md .content-98HsJk {
     overflow: visible;
 }
-.da-contents .da-timestamp {
+.da-contents .da-timestamp,
+.content-98HsJk .timestamp-3ZCmNB {
     font-size: 0.75rem !important;
 }
-.da-contents .da-header .da-username, .da-contents .da-messageContent {
+.da-contents .da-header .da-username,
+.da-contents .da-messageContent,
+.content-98HsJk .header-2o-2hj .username-1A8OIy,
+.content-98HsJk .messageContent-2qWWxC {
     font-size: 0.94rem !important;
 }
 /* END: Font adjustments (changes to Slack-Lato font) */
 
 /* START: Context menu adjustments */
 /* (Mostly only needed if you have "Copy Selector"option enabled) */
-.da-contextMenu .itemGroup-1tL0uz>.item-1Yvehc {
+.da-contextMenu .da-itemGroup>.da-item,
+.contextMenu-HLZMGh .itemGroup-1tL0uz>.item-1Yvehc {
     position: relative;
     font-weight: 500;
     -webkit-box-sizing: border-box;
@@ -167,15 +187,18 @@ div.da-item {
     border-radius: 2px;
     color: var(--interactive-normal);
 }
-.da-contextMenu .itemGroup-1tL0uz>.item-1Yvehc:hover {
+.da-contextMenu .da-itemGroup>.da-item:hover,
+.contextMenu-HLZMGh .itemGroup-1tL0uz>.item-1Yvehc:hover {
   color: var(--interactive-hover);
   background-color: var(--background-modifier-hover);
   cursor: pointer;
 }
-.da-contextMenu {
+.da-contextMenu,
+.contextMenu-HLZMGh {
     padding: 1px 4px;
 }
-body div .da-layerContainer .layer-v9HyYc {
+body div .da-layerContainer .da-layer,
+body div .layerContainer-yqaFcK .layer-v9HyYc {
     margin-top: -30px;
 }
 /* END: Context menu adjustments */
