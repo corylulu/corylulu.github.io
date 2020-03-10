@@ -1,0 +1,197 @@
+/* START: Imports the Slack-Lato font to be used globally */
+@font-face {
+    font-family: Slack-Lato;
+    font-style: normal;
+    font-weight: 300;
+    src: local("\263A"),url(https://a.slack-edge.com/bv1-8-8cacda2/lato-light-0b50f74.woff2) format("woff2"),url(https://a.slack-edge.com/bv1-8-8cacda2/lato-light-1475c14.woff) format("woff");
+    unicode-range: U+0000-f8fe,U+f900-ffff
+}
+@font-face {
+    font-family: Slack-Lato;
+    font-style: normal;
+    font-weight: 400;
+    src: local("\263A"),url(https://a.slack-edge.com/bv1-8-8cacda2/lato-regular-d9ce515.woff2) format("woff2"),url(https://a.slack-edge.com/bv1-8-8cacda2/lato-regular-ea6d1e4.woff) format("woff");
+    unicode-range: U+0000-f8fe,U+f900-ffff
+}
+@font-face {
+    font-family: Slack-Lato;
+    font-style: normal;
+    font-weight: 700;
+    src: local("\263A"),url(https://a.slack-edge.com/bv1-8-8cacda2/lato-bold-4b1dc11.woff2) format("woff2"),url(https://a.slack-edge.com/bv1-8-8cacda2/lato-bold-a532381.woff) format("woff");
+    unicode-range: U+0000-f8fe,U+f900-ffff
+}
+@font-face {
+    font-family: Slack-Lato;
+    font-style: normal;
+    font-weight: 900;
+    src: local("\263A"),url(https://a.slack-edge.com/bv1-8-8cacda2/lato-black-b64f5e4.woff2) format("woff2"),url(https://a.slack-edge.com/bv1-8-8cacda2/lato-black-8857ce8.woff) format("woff");
+    unicode-range: U+0000-f8fe,U+f900-ffff
+}
+@font-face {
+    font-family: Slack-Lato;
+    font-style: italic;
+    font-weight: 300;
+    src: local("\263A"),url(https://a.slack-edge.com/bv1-8-8cacda2/lato-italic-light-c593311.woff2) format("woff2"),url(https://a.slack-edge.com/bv1-8-8cacda2/lato-italic-light-354fb58.woff) format("woff");
+    unicode-range: U+0000-2259,U+2261-f8fe,U+f900-ffff
+}
+@font-face {
+    font-family: Slack-Lato;
+    font-style: italic;
+    font-weight: 400;
+    src: local("\263A"),url(https://a.slack-edge.com/bv1-8-8cacda2/lato-italic-5bbcd6c.woff2) format("woff2"),url(https://a.slack-edge.com/bv1-8-8cacda2/lato-italic-d5261ac.woff) format("woff");
+    unicode-range: U+0000-2259,U+2261-f8fe,U+f900-ffff
+}
+@font-face {
+    font-family: Slack-Lato;
+    font-style: italic;
+    font-weight: 700;
+    src: local("\263A"),url(https://a.slack-edge.com/bv1-8-8cacda2/lato-italic-bold-99def7d.woff2) format("woff2"),url(https://a.slack-edge.com/bv1-8-8cacda2/lato-italic-bold-2187a11.woff) format("woff");
+    unicode-range: U+0000-2259,U+2261-f8fe,U+f900-ffff
+}
+@font-face {
+    font-family: Slack-Lato;
+    font-style: italic;
+    font-weight: 900;
+    src: local("\263A"),url(https://a.slack-edge.com/bv1-8-8cacda2/lato-italic-black-04aca50.woff2) format("woff2"),url(https://a.slack-edge.com/bv1-8-8cacda2/lato-italic-black-23c1971.woff) format("woff");
+    unicode-range: U+0000-2259,U+2261-f8fe,U+f900-ffff
+}
+/* END: Imports the Slack-Lato font to be used globally */
+
+/* START: Enlargens emoji's globally */
+div div div[role='button'] .emoji {
+    width: 1.2rem !important;
+    height: 1.2rem !important;
+    margin: 2px 0 !important;
+}
+.emoji, .emote {
+    width: 1.55rem !important;
+    height: 1.55rem !important;
+}
+.da-channelTextArea .da-webkit {
+    max-height: calc(100vh - 280px) !important;
+}
+.emoji.jumboable {
+    width: 2.2rem !important;
+    height: 2.2rem !important;
+}
+.da-emojiPicker .da-firefoxFixScrollFlex {
+    /* Makes emoji picker larger */
+    height: 324px !important; 
+}
+/* END: Enlargens emoji's globally */
+
+/* Adds line under servers in server list */
+.da-scroller > .da-listItem.bd-guild > .da-blobContainer:after {
+    content: "\00a0 ";
+    border-bottom: 2px #2f3136 solid;
+    margin: 6px auto 0px auto;
+    text-align: center;
+    display: table;
+    width: 32px;
+    font-size: 0.1px;
+    border-radius: 1px;
+}
+
+/* START: Adjusted whitespace in channel list sidebar (compactified, but comfy) */
+.da-content.da-sidebar {
+    width: 228px !important; /* Makes the sidebar slightly narrower */
+}
+.da-sidebar .da-scroller {
+    padding-top: 6px; 
+}
+.da-containerDefault {
+    padding-top: 0px !important;
+}
+.da-containerDefault .da-collapsed {
+    padding-top: 6px !important;
+}
+.da-containerDefault .da-wrapper .da-content {
+    height: 28px !important;
+}
+.da-containerDefault .da-wrapper {
+    height: 32px !important;
+}
+.da-containerDefault .da-wrapper.da-collapsed .da-icon {
+    top: 13px !important;   
+}
+.da-containerDefault .da-wrapper .da-icon {
+    top: 10px !important;   
+}
+.da-children .da-addButton {
+    height: 20px !important;   
+}
+/* END: Adjusted whitespace in channel list sidebar */
+
+/* START: Font adjustments (changes to Slack-Lato font) */
+body {
+    font-family: Slack-Lato,appleLogo,sans-serif !important;
+}
+div.da-name {
+    font-size: 14.5px;
+    line-height: 18px;
+}
+div.da-item {
+    font-size: 15px;
+    line-height: 18px;
+}
+.da-layout .da-content {
+    overflow: visible;
+}
+.da-contents .da-timestamp {
+    font-size: 0.75rem !important;
+}
+.da-contents .da-header .da-username, .da-contents .da-messageContent {
+    font-size: 0.94rem !important;
+}
+/* END: Font adjustments (changes to Slack-Lato font) */
+
+/* START: Context menu adjustments */
+/* (Mostly only needed if you have "Copy Selector"option enabled) */
+.da-contextMenu .itemGroup-1tL0uz>.item-1Yvehc {
+    position: relative;
+    font-weight: 500;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    margin-top: 2px;
+    margin-bottom: 2px;
+    padding: 0 8px;
+    font-size: 14px;
+    line-height: 18px;
+    min-height: 28px !important;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    border-radius: 2px;
+    color: var(--interactive-normal);
+}
+.da-contextMenu .itemGroup-1tL0uz>.item-1Yvehc:hover {
+  color: var(--interactive-hover);
+  background-color: var(--background-modifier-hover);
+  cursor: pointer;
+}
+.da-contextMenu {
+    padding: 1px 4px;
+}
+body div .da-layerContainer .layer-v9HyYc {
+    margin-top: -30px;
+}
+/* END: Context menu adjustments */
+
+/* Makes scrollbars darker to increase visibility */
+*::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 0, 0, .3) !important;
+}
+
+/* Makes Inline code background darker to increase visibility */
+code.inline {
+  background: #0000004a !important;
+}
+
+/* Darkens the secondary background colors globally to improve contrast */
+.theme-dark {
+  --background-secondary: #27292e !important;
+  --background-secondary-alt: #202225 !important;
+}
