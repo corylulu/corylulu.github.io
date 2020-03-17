@@ -1,92 +1,28 @@
-@font-face {
-  font-family: Slack-Lato;
-  font-style: normal;
-  font-weight: 300;
-  src: local("\263A"), url(https://a.slack-edge.com/bv1-8-8cacda2/lato-light-0b50f74.woff2) format("woff2"), url(https://a.slack-edge.com/bv1-8-8cacda2/lato-light-1475c14.woff) format("woff");
-  unicode-range: U+0000-f8fe, U+f900-ffff
-}
-
-@font-face {
-  font-family: Slack-Lato;
-  font-style: normal;
-  font-weight: 400;
-  src: local("\263A"), url(https://a.slack-edge.com/bv1-8-8cacda2/lato-regular-d9ce515.woff2) format("woff2"), url(https://a.slack-edge.com/bv1-8-8cacda2/lato-regular-ea6d1e4.woff) format("woff");
-  unicode-range: U+0000-f8fe, U+f900-ffff
-}
-
-@font-face {
-  font-family: Slack-Lato;
-  font-style: normal;
-  font-weight: 700;
-  src: local("\263A"), url(https://a.slack-edge.com/bv1-8-8cacda2/lato-bold-4b1dc11.woff2) format("woff2"), url(https://a.slack-edge.com/bv1-8-8cacda2/lato-bold-a532381.woff) format("woff");
-  unicode-range: U+0000-f8fe, U+f900-ffff
-}
-
-@font-face {
-  font-family: Slack-Lato;
-  font-style: normal;
-  font-weight: 900;
-  src: local("\263A"), url(https://a.slack-edge.com/bv1-8-8cacda2/lato-black-b64f5e4.woff2) format("woff2"), url(https://a.slack-edge.com/bv1-8-8cacda2/lato-black-8857ce8.woff) format("woff");
-  unicode-range: U+0000-f8fe, U+f900-ffff
-}
-
-@font-face {
-  font-family: Slack-Lato;
-  font-style: italic;
-  font-weight: 300;
-  src: local("\263A"), url(https://a.slack-edge.com/bv1-8-8cacda2/lato-italic-light-c593311.woff2) format("woff2"), url(https://a.slack-edge.com/bv1-8-8cacda2/lato-italic-light-354fb58.woff) format("woff");
-  unicode-range: U+0000-2259, U+2261-f8fe, U+f900-ffff
-}
-
-@font-face {
-  font-family: Slack-Lato;
-  font-style: italic;
-  font-weight: 400;
-  src: local("\263A"), url(https://a.slack-edge.com/bv1-8-8cacda2/lato-italic-5bbcd6c.woff2) format("woff2"), url(https://a.slack-edge.com/bv1-8-8cacda2/lato-italic-d5261ac.woff) format("woff");
-  unicode-range: U+0000-2259, U+2261-f8fe, U+f900-ffff
-}
-
-@font-face {
-  font-family: Slack-Lato;
-  font-style: italic;
-  font-weight: 700;
-  src: local("\263A"), url(https://a.slack-edge.com/bv1-8-8cacda2/lato-italic-bold-99def7d.woff2) format("woff2"), url(https://a.slack-edge.com/bv1-8-8cacda2/lato-italic-bold-2187a11.woff) format("woff");
-  unicode-range: U+0000-2259, U+2261-f8fe, U+f900-ffff
-}
-
-@font-face {
-  font-family: Slack-Lato;
-  font-style: italic;
-  font-weight: 900;
-  src: local("\263A"), url(https://a.slack-edge.com/bv1-8-8cacda2/lato-italic-black-04aca50.woff2) format("woff2"), url(https://a.slack-edge.com/bv1-8-8cacda2/lato-italic-black-23c1971.woff) format("woff");
-  unicode-range: U+0000-2259, U+2261-f8fe, U+f900-ffff
-}
-
-/* END: Imports the Slack-Lato font to be used globally */
 
 /* START: Enlargens emoji's globally */
 div div div[role='button'] .emoji {
-  width: 1.2rem !important;
-  height: 1.2rem !important;
+  width: var(--emoji-reaction-size) !important;
+  height: var(--emoji-reaction-size) !important;
   margin: 2px 0 !important;
 }
 
-.emoji, .emote {
-  width: 1.55rem !important;
-  height: 1.55rem !important;
+.emoji,
+.emote {
+  width: var(--emoji-inline-size) !important;
+  height: var(--emoji-inline-size) !important;
 }
 
 .emoji.jumboable {
-  /* This is the default size now, but I'm using !important because lazy */
-  width: 3rem !important;
-  height: 3rem !important;
+  width: var(--emoji-jumbo-size) !important;
+  height: var(--emoji-jumbo-size) !important;
 }
 
 .da-emojiPicker .da-scroller,
 .emojiPicker-3m1S-j .scroller-3vODG7 {
   /* Makes emoji picker larger */
-  height: 324px !important;
+  height: var(--emoji-picker-height) !important;
 }
+
 /* END: Enlargens emoji's globally */
 
 /* Increases the size of the edit comment box */
@@ -159,7 +95,7 @@ div div div[role='button'] .emoji {
 
 /* START: Font adjustments (changes to Slack-Lato font) */
 body {
-  font-family: Slack-Lato, appleLogo, sans-serif !important;
+  font-family: var(--global-fonts) !important;
 }
 
 div.da-name,
