@@ -31,19 +31,6 @@ div div div[role='button'] .emoji {
   max-height: calc(100vh - 280px) !important;
 }
 
-/* Adds line under servers in server list */
-.da-scroller>.da-listItem.bd-guild>.da-blobContainer:after,
-.scroller-3vODG7>.listItem-2P_4kh.bd-guild>.blobContainer-239gwq:after {
-  content: "\00a0 ";
-  border-bottom: 2px #2f3136 solid;
-  margin: 6px auto 0px auto;
-  text-align: center;
-  display: table;
-  width: 32px;
-  font-size: 0.1px;
-  border-radius: 1px;
-}
-
 /* START: Adjusted whitespace in channel list sidebar (compactified, but comfy) */
 .da-content.da-sidebar,
 .content-98HsJk .sidebar-2K8pFh {
