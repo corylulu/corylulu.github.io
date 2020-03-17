@@ -47,7 +47,7 @@ div div div[role='button'] .emoji {
 /* START: Adjusted whitespace in channel list sidebar (compactified, but comfy) */
 .da-content.da-sidebar,
 .content-98HsJk .sidebar-2K8pFh {
-  width: 228px !important;
+  width: var(--channel-list-width) !important;
   /* Makes the sidebar slightly narrower */
 }
 
