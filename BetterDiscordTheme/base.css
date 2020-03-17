@@ -1,5 +1,3 @@
-
-/* START: Imports the Slack-Lato font to be used globally */
 @font-face {
   font-family: Slack-Lato;
   font-style: normal;
@@ -63,6 +61,7 @@
   src: local("\263A"), url(https://a.slack-edge.com/bv1-8-8cacda2/lato-italic-black-04aca50.woff2) format("woff2"), url(https://a.slack-edge.com/bv1-8-8cacda2/lato-italic-black-23c1971.woff) format("woff");
   unicode-range: U+0000-2259, U+2261-f8fe, U+f900-ffff
 }
+
 /* END: Imports the Slack-Lato font to be used globally */
 
 /* START: Enlargens emoji's globally */
@@ -72,20 +71,15 @@ div div div[role='button'] .emoji {
   margin: 2px 0 !important;
 }
 
-.emoji,
-.emote {
+.emoji, .emote {
   width: 1.55rem !important;
   height: 1.55rem !important;
 }
 
-.da-channelTextArea .da-webkit,
-.channelTextArea-rNsIhG .webkit-HjD9Er {
-  max-height: calc(100vh - 280px) !important;
-}
-
 .emoji.jumboable {
-  width: 2.2rem !important;
-  height: 2.2rem !important;
+  /* This is the default size now, but I'm using !important because lazy */
+  width: 3rem !important;
+  height: 3rem !important;
 }
 
 .da-emojiPicker .da-scroller,
@@ -94,6 +88,12 @@ div div div[role='button'] .emoji {
   height: 324px !important;
 }
 /* END: Enlargens emoji's globally */
+
+/* Increases the size of the edit comment box */
+.da-channelTextArea .da-webkit,
+.channelTextArea-rNsIhG .webkit-HjD9Er {
+  max-height: calc(100vh - 280px) !important;
+}
 
 /* Adds line under servers in server list */
 .da-scroller>.da-listItem.bd-guild>.da-blobContainer:after,
@@ -154,6 +154,7 @@ div div div[role='button'] .emoji {
 .children-13TY0l .addButton-1BORro {
   height: 20px !important;
 }
+
 /* END: Adjusted whitespace in channel list sidebar */
 
 /* START: Font adjustments (changes to Slack-Lato font) */
@@ -189,6 +190,7 @@ div.item-2hkk8m {
 .content-98HsJk .messageContent-2qWWxC {
   font-size: 0.94rem !important;
 }
+
 /* END: Font adjustments (changes to Slack-Lato font) */
 
 /* START: Context menu adjustments */
@@ -262,12 +264,6 @@ body div .layerContainer-yqaFcK .layer-v9HyYc {
 .group-spacing-16 .avatar-1BDn8e {
   top: 0.65rem;
 }
-
-/*.group-spacing-16 .da-message:not(.da-groupStart),
-.group-spacing-16 .message-2qnXI6:not(.groupStart-23k01U) {
-  margin-top: 0.15rem;
-  padding-top: 0.15rem;
-}*/
 /* END: Adjusts message area, adds subtle divider */
 
 /* Makes scrollbars darker to increase visibility */
