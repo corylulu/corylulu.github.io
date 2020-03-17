@@ -214,7 +214,9 @@ code.inline {
 
 /* START: Changes for light mode (minimal) */
 .theme-light .da-sidebarRegion:not(.theme-dark),
-.theme-light .da-sidebar:not(.theme-dark),
+.theme-light .da-container .da-sidebar:not(.theme-dark),
+.theme-light .sidebarRegion-VFTUkN:not(.theme-dark),
+.theme-light .container-2lgZY8 .sidebar-2K8pFh:not(.theme-dark),
 .theme-light .membersWrap-2h-GB4, 
 .theme-light .da-membersWrap,
 .theme-light .chat-3bRxxu .title-3qD0b-, 
