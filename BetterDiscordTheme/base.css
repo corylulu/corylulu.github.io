@@ -213,8 +213,8 @@ code.inline {
 }
 
 /* START: Changes for light mode (minimal) */
-.theme-light .da-sidebarRegion,
-.theme-light .da-sidebar,
+.theme-light .da-sidebarRegion:not(.theme-dark),
+.theme-light .da-sidebar:not(.theme-dark),
 .theme-light .membersWrap-2h-GB4, 
 .theme-light .da-membersWrap,
 .theme-light .chat-3bRxxu .title-3qD0b-, 
