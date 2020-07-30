@@ -17,11 +17,14 @@ div div div[role='button'] .emoji {
   height: var(--emoji-jumbo-size) !important;
 }
 
+
+.da-emojiPicker,
 .da-positionContainer,
 .da-emojiPicker .da-listWrapper,
 .emojiPicker-3m1S-j .scroller-3vODG7 {
   /* Makes emoji picker larger */
   height: var(--emoji-picker-height) !important;
+  max-height: 750px;
 }
 
 /* END: Enlargens emoji's globally */
